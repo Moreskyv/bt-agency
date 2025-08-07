@@ -1,0 +1,12 @@
+.feedback-container{
+    height: 100px;
+}
+
+.feedback-text {
+    width: 700px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
