@@ -1,6 +1,5 @@
 import './cost.css'
 
-
 const Landing = () => {
   const handleAnimationComplete = () => {
     console.log('All letters have animated!');
@@ -20,7 +19,7 @@ const Landing = () => {
                     </div>
                 </div>
                 <div className='cost-button-box'>
-                    <button className="telegram">
+                    <a href="https://t.me/bntagency" target='_blank' rel='noopener norefferer'><button className='telegram' type='button'>
       <svg
         style={{ fill: '#FFFFFF' }}
         className="telegram-svg"
@@ -54,7 +53,7 @@ const Landing = () => {
       </svg>
       <span className="telegram-text">Telegram</span>
     </button>
-
+    </a>
                 </div>
             </div>
         </div>

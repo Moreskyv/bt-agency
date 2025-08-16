@@ -9,7 +9,7 @@ const Landing = () => {
   return (
     <>
       <div className='aboutText'>
-        <div className='text'>
+        <div className='text' id='target'>
             <p>
             
             </p>

@@ -1,30 +1,30 @@
 @media (min-width:320px)  { 
-      .landing{
+      .text-box{
     font-size: 40px;
   }
 }
 @media (min-width:480px)  {
-      .landing{
+      .text-box{
     font-size: 40px;
   }
 }
 @media (min-width:600px)  { 
-    .landing{
+    .text-box{
     font-size: 55px;
   }
 }
 @media (min-width:801px)  { 
-    .landing{
+    .text-box{
     font-size: 70px;
   }
 }
 @media (min-width:1025px) { 
-    .landing{
+    .text-box{
     font-size: 85px;
   }
 }
 @media (min-width:1281px) { 
-  .landing{
+  .text-box{
     font-size: 100px;
   }
 }
@@ -36,9 +36,39 @@
     justify-content: center;
     flex-direction: column;
     font-family: 'veolia';
+    border: 0 !important;
 
 }
 
+.button-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 400px;
+  height: 100px;
+}
+.sale-box{
+  background-color: rgb(220, 239, 255);
+  width: 180px;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 17px;
+}
+.about-box{
+  background-color: rgb(190, 190, 190);
+  width: 180px;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 17px;
+  color:  rgb(77, 77, 77);
+}
+.text-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  padding-bottom: 0 !important;
+}
 
 .scroll-down {
   position: absolute;

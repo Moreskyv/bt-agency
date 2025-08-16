@@ -21,7 +21,7 @@ createRoot(document.getElementById('root')).render(
 
     <Aurora
       colorStops={["#CDF7F6", "#8FB8DE", "#9A94BC"]}
-      blend={0.5}
+      blend={1}
       amplitude={1.0}
       speed={0.5}
     />
