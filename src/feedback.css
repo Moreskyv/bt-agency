@@ -1,16 +1,96 @@
 .feedback-container{
-    height: 100px;
+padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.feedback-text {
-    width: 700px;
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.feedback-screen{
+  width: 70%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.landing{
-    border: 1px solid black;
+.feedback-text-box{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+}
+
+.feedback-items-box{
+  width: 100%;
+  height: 700px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.grid-item {
+  width: 500px;
+  height: 300px;
+  display: flex;  
+  flex-direction: row;
+}
+
+.grid-avatar{
+  width: 100px;
+  height: 100%;
+}
+
+.avatar-box{
+  width: 100%;
+  height: 100px;
+}
+
+.grid-text-box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.grid-feedback{
+  width: 90%;
+}
+
+.grid-author {
+  width: 90%;
+  height: 30px;
+  color: black;
+}
+
+.grid-channel{
+  width: 90%;
+  height: 50px;
+  color: gray;
+}
+
+.avatar-feedback {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.f1 {
+    height: 170px;
+}
+
+.f2 {
+  height: 170px;
+}
+
+.f3 {
+  height: 125px;
+}
+
+.f4 {
+  height: 110px;
 }
