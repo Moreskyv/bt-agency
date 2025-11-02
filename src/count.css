@@ -1,0 +1,32 @@
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rem;
+  text-align: center;
+}
+
+.count-text-box {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.count-text {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 768px) {
+  .count-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 480px) {
+  .count-text {
+    font-size: 1.2rem;
+  }
+}
