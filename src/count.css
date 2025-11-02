@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   text-align: center;
 }
 
