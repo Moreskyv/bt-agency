@@ -21,13 +21,13 @@
 /* Адаптация для планшетов */
 @media (max-width: 768px) {
   .count-text {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 }
 
 /* Адаптация для мобильных */
 @media (max-width: 480px) {
   .count-text {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
