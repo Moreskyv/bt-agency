@@ -19,7 +19,7 @@ const Landing = () => {
                     </div>
                 </div>
                 <div className='cost-button-box'>
-                    <a href="https://t.me/bntagency" target='_blank' rel='noopener norefferer'><button className='telegram' type='button'>
+                    <a href="https://t.me/egorbchv" target='_blank' rel='noopener norefferer'><button className='telegram' type='button'>
       <svg
         style={{ fill: '#FFFFFF' }}
         className="telegram-svg"

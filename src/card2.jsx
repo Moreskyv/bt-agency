@@ -1,6 +1,6 @@
 import ProfileCard from './blocks/ProfileCard/ProfileCard.jsx'
-import avatar from './avatar1.png';
-import './card1.css';
+import avatar from './avatar2.png';
+import './card2.css';
 import AnimatedContent from './AnimatedContent/AnimatedContent.jsx'
 
 const Landing = () => {
@@ -25,15 +25,15 @@ const Landing = () => {
 >
   <div>    <div className='container'>
     <ProfileCard
-  name="Богачев Егор"
+  name="Туманский Саид"
   title="Сооснователь агенства"
-  handle="Moreskyv"
+  handle="Krosset"
   status="Online"
   contactText="Написать"
   avatarUrl={avatar}
   showUserInfo={true}
   enableTilt={true}
-  onContactClick={() => open('https://t.me/egorbchv')}
+  onContactClick={() => open('https://t.me/Krosset')}
 />
     </div></div>
 </AnimatedContent>
@@ -53,12 +53,7 @@ const Landing = () => {
   <div>
      <div className='text-boxx'>
         <p className='text'>
-          Минимум с вашей стороны — максимум с нашей.
-Всё, что нам нужно — это исходные материалы и задача.
-Дальше мы берём всё в свои руки:
-от разработки идеи и отбора контента до монтажа и финальных правок.
-
-В результате вы получаете готовый к публикации материал, без лишней суеты.</p></div>  
+         Мы превращаем ваши идеи в контент, который работает - цепляет, вовлекает и продаёт. Вам не нужно контролировать процесс: достаточно довериться команде, которая знает, как превратить задачу в результат.</p></div>  
   </div>
 </AnimatedContent>
    

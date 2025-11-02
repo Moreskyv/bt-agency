@@ -1,96 +1,132 @@
-.feedback-container{
-padding-top: 200px;
+/* --- Общий контейнер --- */
+.feedback-container {
+  padding: 50px 20px;
   display: flex;
   justify-content: center;
+  background: #f5f5f5; /* фон для блока отзывов */
+}
+
+.feedback-screen {
+  width: 100%;
+  max-width: 1400px; /* ограничение ширины на больших экранах */
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.feedback-screen{
-  width: 70%;
-  height: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+/* --- Заголовок --- */
+.feedback-title {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.feedback-text-box{
-  width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  font-size: 40px;
-}
-
-.feedback-items-box{
-  width: 100%;
-  height: 700px;
-}
-
+/* --- Сетка отзывов --- */
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+/* Большие экраны: 4 колонки */
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Планшеты: 2 колонки */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Мобильные: 1 колонка */
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Карточка отзыва --- */
 .grid-item {
-  width: 500px;
-  height: 300px;
-  display: flex;  
-  flex-direction: row;
-}
-
-.grid-avatar{
-  width: 100px;
-  height: 100%;
-}
-
-.avatar-box{
-  width: 100%;
-  height: 100px;
-}
-
-.grid-text-box{
-  width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-.grid-feedback{
-  width: 90%;
-}
-
-.grid-author {
-  width: 90%;
-  height: 30px;
-  color: black;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  min-height: 250px; /* одинаковая минимальная высота карточки */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grid-channel{
-  width: 90%;
-  height: 50px;
-  color: gray;
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* --- Аватар --- */
+.grid-avatar {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.avatar-box {
+  width: 80px;
+  height: 80px;
 }
 
 .avatar-feedback {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  object-fit: cover;
 }
 
-.f1 {
-    height: 170px;
+/* --- Контент отзыва --- */
+.grid-text-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.f2 {
-  height: 170px;
+.grid-feedback {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.f3 {
-  height: 125px;
+.grid-author {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #000;
 }
 
-.f4 {
-  height: 110px;
+.grid-channel {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* --- Адаптация карточек на мобильных --- */
+@media (max-width: 767px) {
+  .grid-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .grid-avatar {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .grid-text-box {
+    align-items: center;
+  }
 }

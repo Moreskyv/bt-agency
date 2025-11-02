@@ -51,7 +51,7 @@ const Landing = () => {
         </div>
         <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
         <div className='button-box'>
-          <a href="https://t.me/bntagency" target='_blank' rel='noopener norefferer'><button className='sale-box' type='button'>Заказать</button></a>
+          <a href="https://t.me/egorbchv" target='_blank' rel='noopener norefferer'><button className='sale-box' type='button'>Заказать</button></a>
           <button className='about-box' onClick={handleScroll} type='button'>Узнать больше</button>
         </div>
         </FadeContent>
