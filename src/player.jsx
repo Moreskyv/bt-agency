@@ -3,7 +3,7 @@ import './player.css'
 const videoList = [
   {
     title: "Видео 1",
-    embedUrl: "https://rutube.ru/shorts/213b1e60dc38696acee4f085e872783b/",
+    embedUrl: "https://disk.yandex.ru/i/jEvK3KtXRQlyUA",
   },
   {
     title: "Видео 2",
