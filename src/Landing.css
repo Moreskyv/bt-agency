@@ -35,7 +35,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    font-family: 'veolia';
+    font-family: 'inter' !important;
     border: 0 !important;
 
 }
@@ -68,7 +68,10 @@
   align-items: center;
   height: 300px;
   padding-bottom: 0 !important;
+  font-family: 'inter' !important;
 }
+
+
 
 .scroll-down {
   position: absolute;

@@ -3,3 +3,13 @@
     src: url(Veolia.ttf) format('truetype');
     font-display: swap; /* Для избежания FOIT */
   }
+
+@font-face {
+  font-family: inter;
+  src: url(./Inter/static/Inter_28pt-Bold.ttf);
+}
+
+@font-face {
+  font-family: lato;
+  src: url(./Lato/Lato-Regular.ttf);
+}

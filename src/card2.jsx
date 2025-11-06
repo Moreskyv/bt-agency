@@ -1,5 +1,5 @@
 import ProfileCard from './blocks/ProfileCard/ProfileCard.jsx'
-import avatar from './avatar2.png';
+import avatar from './avatar5.png';
 import './card2.css';
 import AnimatedContent from './AnimatedContent/AnimatedContent.jsx'
 

@@ -3,7 +3,7 @@ import './player.css'
 const videoList = [
   {
     title: "Видео 1",
-    embedUrl: "https://disk.yandex.ru/i/jEvK3KtXRQlyUA",
+    embedUrl: "https://kinescope.io/9o5sfWEzNrDAbszmBTdG7F",
   },
   {
     title: "Видео 2",
@@ -37,6 +37,7 @@ export default function VideoPlayer() {
         ></iframe>
       </div>
 
+          
       <div style={{ marginTop: "20px" }}>
         {videoList.map((video, index) => (
           <button

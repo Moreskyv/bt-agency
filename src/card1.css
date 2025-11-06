@@ -8,7 +8,9 @@
   padding-bottom: clamp(100px, 15vw, 300px);
   flex-wrap: wrap;
 }
-
+.text {
+  font-family: 'lato';
+}
 /* Контейнер оставляем пустым, если используется для отступов */
 .container {}
 
@@ -34,33 +36,6 @@
   transition: all 0.3s ease;
 }
 
-.text-boxx:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 40px rgba(31, 38, 135, 0.25);
-}
-
-/* Эффект блика */
-.text-boxx::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 2rem;
-  backdrop-filter: blur(2px);
-  box-shadow: inset -10px -8px 0px -11px rgba(255, 255, 255, 1),
-              inset 0px -9px 0px -8px rgba(255, 255, 255, 1);
-  opacity: 0.5;
-  z-index: -1;
-}
-
-.avatar {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.profile-card:hover .avatar {
-  opacity: 1;
-}
 
 /* === МЕДИА === */
 

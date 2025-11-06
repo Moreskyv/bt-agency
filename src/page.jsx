@@ -1,3 +1,5 @@
+import './page.css'
+
 export default function Footer() {
   return (
     <footer
@@ -21,7 +23,7 @@ export default function Footer() {
           lineHeight: 1.2
         }}
       >
-        Создаём <span style={{ color: '#4B2EFF' }}>кинематографию</span> вместе с <br />B&T Agency
+        Создаём <span  className="page-main-text" style={{ color: '#4B2EFF'}}>кинематографию</span> вместе с <br />B&T Agency
       </h2>
 
       <p
@@ -29,7 +31,8 @@ export default function Footer() {
           color: '#9ca3af',
           maxWidth: '500px',
           marginBottom: '2.5rem',
-          fontSize: '1rem'
+          fontSize: '1rem',
+          fontFamily: 'lato',
         }}
       >
         Мы создаём визуальные истории и видеомонтажи, которые выделяют ваш бренд и заставляют его запомниться.

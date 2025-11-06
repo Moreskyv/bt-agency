@@ -1,6 +1,7 @@
 .Services {
     padding-top: 200px;
     padding-bottom: 200px;
+    font-family: 'inter';
 
 }
 
@@ -18,5 +19,6 @@
 
 .Second-text {
     font-size: 30px;
-text-align: center;
+    text-align: center;
+    font-family: 'lato';
 }

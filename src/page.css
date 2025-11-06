@@ -5,3 +5,7 @@
     justify-content: center;
     align-items: center;
 }
+
+.page-main-text {
+    font-family: 'inter';
+}
