@@ -108,7 +108,7 @@
 /* Адаптивность */
 @media (max-width: 480px) {
   .player-title {
-    font-size: 18px;
+    font-size: 36px;
   }
 
   .tab-button {
