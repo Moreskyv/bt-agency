@@ -1,6 +1,6 @@
 /* Контейнер всего плеера */
 .player-wrapper {
-  max-width: 680px;
+  max-width: 880px;
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
@@ -49,22 +49,35 @@
 .video-container {
   position: relative;
   width: 100%;
-  max-width: 880px;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  margin-bottom: 20px;
+  max-width: 100%; 
+  margin: 0 auto 20px auto;
   border-radius: 10px;
   overflow: hidden;
+  background: #000;
 }
 
+/* Современные браузеры: правильная адаптивность */
 .video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  aspect-ratio: 16 / 9;
   border: none;
+  display: block;
 }
+
+/* Fallback для старых устройств */
+@supports not (aspect-ratio: 16 / 9) {
+  .video-container {
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 
 /* Выбор видео */
 .video-selector {
