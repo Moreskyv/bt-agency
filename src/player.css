@@ -1,7 +1,3 @@
-/* Контейнер всего плеера */
-html, body {
-  overflow-x: hidden; /* предотвращаем выход за экран */
-}
 
 .player-wrapper {
   max-width: 880px;
