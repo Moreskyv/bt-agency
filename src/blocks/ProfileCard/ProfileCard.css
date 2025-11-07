@@ -187,7 +187,9 @@
   left: 50%;
   transform: translateX(-50%) scale(1);
   bottom: 2px;
-  opacity: calc(1.75 - var(--pointer-from-center));
+  opacity: clamp(0.7, calc(1.75 - var(--pointer-from-center)), 1);
+  transition: opacity 0.35s ease;
+  pointer-events: none; /* оставляем, чтобы не ломать tilt */
 }
 
 .pc-avatar-content::before {
@@ -486,4 +488,33 @@
     font-size: 9px;
     border-radius: 50px;
   }
+
+/* ===== Avatar visibility final patch ===== */
+.pc-card-wrapper {
+  /* явные начальные значения чтобы анимация не прятала аватар */
+  --pointer-from-center: 0;
+  --pointer-from-top: 0.5;
+  --pointer-from-left: 0.5;
+}
+
+.pc-avatar-content .avatar {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  bottom: 2px;
+
+  /* Гарантируем видимость + сохраняем tilt-переход */
+  opacity: clamp(0.8, calc(1.75 - var(--pointer-from-center)), 1);
+  transition: opacity 0.30s ease, transform 0.30s ease;
+  will-change: opacity, transform;
+  visibility: visible;
+}
+
+/* Debug helper — временно (удалить после проверки) */
+.pc-avatar-content .avatar.debug-show {
+  opacity: 1 !important;
+  outline: 2px dashed lime;
+}
+
 }

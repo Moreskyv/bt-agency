@@ -250,16 +250,18 @@ const ProfileCardComponent = ({
           <div className="pc-shine" />
           <div className="pc-glare" />
           <div className="pc-content pc-avatar-content">
-            <img
-              className="avatar"
-              src={avatarUrl}
-              alt={`${name || "User"} avatar`}
-              loading="lazy"
-              onError={(e) => {
-                const target = e.target;
-                target.style.display = "none";
-              }}
-            />
+<img
+  className="avatar"
+  src={avatarUrl}
+  alt={`${name || "User"} avatar`}
+  loading="eager"   // было lazy — меняем на eager
+  onError={(e) => {
+    // не скрываем изображение полностью — показываем запасное (fallback)
+    const target = e.target;
+    target.src = miniAvatarUrl || '/path/to/fallback.png';
+    target.style.opacity = '1';
+  }}
+/>
             {showUserInfo && (
               <div className="pc-user-info">
                 <div className="pc-user-details">

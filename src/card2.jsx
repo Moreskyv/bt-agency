@@ -1,6 +1,7 @@
+
 import ProfileCard from './blocks/ProfileCard/ProfileCard.jsx'
 import avatar from './avatar5.png';
-import './card2.css';
+import './card1.css';
 import AnimatedContent from './AnimatedContent/AnimatedContent.jsx'
 
 const Landing = () => {
@@ -33,11 +34,11 @@ const Landing = () => {
   avatarUrl={avatar}
   showUserInfo={true}
   enableTilt={true}
-  onContactClick={() => open('https://t.me/Krosset')}
+  onContactClick={() => open('/https://t.me/Krosset')}
 />
     </div></div>
 </AnimatedContent>
-    
+
      <AnimatedContent
   distance={450}
   direction="horizontal"
@@ -53,10 +54,15 @@ const Landing = () => {
   <div>
      <div className='text-boxx'>
         <p className='text'>
-         Мы превращаем ваши идеи в контент, который работает - цепляет, вовлекает и продаёт. Вам не нужно контролировать процесс: достаточно довериться команде, которая знает, как превратить задачу в результат.</p></div>  
+          Минимум с вашей стороны — максимум с нашей.
+Всё, что нам нужно — это исходные материалы и задача.
+Дальше мы берём всё в свои руки:
+от разработки идеи и отбора контента до монтажа и финальных правок.
+
+В результате вы получаете готовый к публикации материал, без лишней суеты.</p></div>  
   </div>
 </AnimatedContent>
-   
+
     </div>
 
     </>
@@ -64,4 +70,3 @@ const Landing = () => {
 };
 
 export default Landing;
-
