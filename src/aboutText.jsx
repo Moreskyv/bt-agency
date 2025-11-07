@@ -7,17 +7,13 @@ const Landing = () => {
   };
 
   return (
-    <>
-      <div className='aboutText'>
-        <div className='text' id='target'>
-            <p>
-            
-            </p>
-            <SplitText
+    <div className='aboutText'>
+      <div className='text' id='target'>
+        <SplitText
           text="Мы создаем видео, которое увлекает, продает и вдохновляет. Все услуги — от идеи до готового контента — в режиме одного окна."
-          className="font-semibold text-center"
+          className="font-semibold text-center split-text"
           style={{
-            fontSize: "70px", // Размер шрифта для первого текста
+            fontSize: "70px", // Размер шрифта
             display: "inline-block",
           }}
           delay={100}
@@ -31,9 +27,8 @@ const Landing = () => {
           textAlign="center"
           onLetterAnimationComplete={handleAnimationComplete}
         />
-        </div>
       </div>
-    </>
+    </div>
   );
 };
 
