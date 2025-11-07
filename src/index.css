@@ -1,6 +1,9 @@
 :root {
   font-family: lato;
   line-height: 1.5;
+  --bg-color: #ffffff;      /* фон страницы */
+  --text-color: #111111;    /* основной текст */
+  --link-color: #0078ff;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -12,7 +15,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
 
+/* На случай, если браузер пытается включить темную тему */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+  }
+}
+
+/* Пример для основных элементов, чтобы светлая тема была повсюду */
+header, nav, footer, section, article, .card {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
 
 a {
   font-weight: 500;
