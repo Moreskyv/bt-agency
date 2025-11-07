@@ -34,7 +34,7 @@ const Landing = () => {
   avatarUrl={avatar}
   showUserInfo={true}
   enableTilt={true}
-  onContactClick={() => open('/https://t.me/Krosset')}
+  onContactClick={() => open('https://t.me/Krosset')}
 />
     </div></div>
 </AnimatedContent>

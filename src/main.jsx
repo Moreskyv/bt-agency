@@ -75,7 +75,7 @@ createRoot(document.getElementById('root')).render(
 >
   <div><Cost></Cost></div>
 </AnimatedContent>
-<Feedback></Feedback>
+
 
 
 <AnimatedContent

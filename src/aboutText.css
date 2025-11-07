@@ -1,4 +1,4 @@
-.aboutText {
+.aboutText{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,14 +6,8 @@
     padding-bottom: 200px;
     font-family: 'lato';
 }
-
 .text {
     max-width: 600px;
+
 }
 
-/* Главное: изначально скрываем буквы для плавной анимации */
-.split-text span {
-    opacity: 0; /* текст изначально невидим */
-    transform: translateY(40px); /* стартовая позиция для анимации */
-    display: inline-block; /* чтобы transform работал корректно */
-}
