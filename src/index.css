@@ -28,7 +28,7 @@ html, body {
 
 /* На случай, если браузер пытается включить темную тему */
 @media (prefers-color-scheme: dark) {
-  html, body, * {
+  html, body {
     background-color: #ffffff !important;
 
   }
